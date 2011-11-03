@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">미투플러그인 애드온</title>
+	<description xml:lang="ko">미투플러그인을 쉽게 적용할 수 있는 애드온입니다.</description>
+	<version>1.0</version>
+	<date>2011-11-02</date>
+	<author email_address="developers@xpressengine.com" link="http://www.xpressengine.com">
+		<name xml:lang="ko">NHN</name>
+	</author>
+	<extra_vars>
+		<group>
+			<title xml:lang="ko">미투버튼</title>
+			<var name="button_layout" type="select">
+				<title xml:lang="ko">버튼레이아웃</title>
+				<options value="small">
+					<title xml:lang="ko">작은 크기</title>
+				</options>
+				<options value="standard">
+					<title xml:lang="ko">보통 크기</title>
+				</options>
+				<options value="standard_with_text">
+					<title xml:lang="ko">보통 크기(설명 글 포함)</title>
+				</options>
+				<options value="large">
+					<title xml:lang="ko">큰 크기</title>
+				</options>
+				<options value="box">
+					<title xml:lang="ko">박스형</title>
+				</options>
+			</var>
+			<var name="button_profile_images" type="select">
+				<title xml:lang="ko">미투한 친구 프로필 사진</title>
+				<options value="off">
+					<title xml:lang="ko">보이지 않음</title>
+				</options>
+				<options value="bottom">
+					<title xml:lang="ko">아래에 표시</title>
+				</options>
+				<options value="right">
+					<title xml:lang="ko">오른쪽에 표시</title>
+				</options>
+			</var>
+			<var name="button_color" type="select">
+				<title xml:lang="ko">버튼 색상</title>
+				<options value="dark">
+					<title xml:lang="ko">어두운 색상</title>
+				</options>
+				<options value="light">
+					<title xml:lang="ko">밝은 색상</title>
+				</options>
+			</var>
+			<var name="button_pingback" type="select">
+				<title xml:lang="ko">내 미투에도 쓰기</title>
+				<options value="unchecked">
+					<title xml:lang="ko">체크하지 않은 것을 기본 상태로</title>
+				</options>
+				<options value="checked">
+					<title xml:lang="ko">체크한 것을 기본 상태로</title>
+				</options>
+				<options value="checked_disabled">
+					<title xml:lang="ko">무조건 체크한 상태로</title>
+				</options>
+			</var>
+			<var name="button_position" type="select">
+				<title xml:lang="ko">버튼 위치</title>
+				<options value="top">
+					<title xml:lang="ko">게시물 상단</title>
+				</options>
+				<options value="bottom">
+					<title xml:lang="ko">게시물 하단</title>
+				</options>
+			</var>
+			<var name="button_align" type="select">
+				<title xml:lang="ko">버튼 가로 정렬</title>
+				<options value="left">
+					<title xml:lang="ko">왼쪽</title>
+				</options>
+				<options value="center">
+					<title xml:lang="ko">가운데</title>
+				</options>
+				<options value="right">
+					<title xml:lang="ko">오른쪽</title>
+				</options>
+			</var>
+		</group>
+		<group>
+			<title xml:lang="ko">댓글</title>
+			<var name="comment_use" type="select">
+				<title xml:lang="ko">사용 여부</title>
+				<options value="">
+					<title xml:lang="ko">사용하지 않음</title>
+				</options>
+				<options value="Y">
+					<title xml:lang="ko">사용 함</title>
+				</options>
+			</var>
+			<var name="comment_width" type="text">
+				<title xml:lang="ko">폭 (단위 px)</title>
+			</var>
+			<var name="comment_count" type="text">
+				<title xml:lang="ko">페이지당 댓글 수</title>
+			</var>
+			<var name="comment_color" type="select">
+				<title xml:lang="ko">플러그인 색상</title>
+				<options value="dark">
+					<title xml:lang="ko">어두운 색상</title>
+				</options>
+				<options value="light">
+					<title xml:lang="ko">밝은 색상</title>
+				</options>
+			</var>
+			<var name="comment_pingback" type="select">
+				<title xml:lang="ko">내 미투에도 쓰기</title>
+				<options value="unchecked">
+					<title xml:lang="ko">체크하지 않은 것을 기본 상태로</title>
+				</options>
+				<options value="checked">
+					<title xml:lang="ko">체크한 것을 기본 상태로</title>
+				</options>
+				<options value="checked_disabled">
+					<title xml:lang="ko">무조건 체크한 상태로</title>
+				</options>
+			</var>
+		</group>
+		<group>
+			<title xml:lang="ko">공통</title>
+			<var name="post_body" type="text">
+				<description xml:lang="ko">미투데이로 올라갈 글 내용을 작성해주세요. 글 링크 부분은 %link% 치환자를 사용하세요. (예: 나 오늘 지금! 미투데이 - %link%)</description>
+				<title xml:lang="ko">포스트 내용</title>
+			</var>
+			<var name="post_tag" type="text">
+				<title xml:lang="ko">태그</title>
+			</var>
+			<var name="plugin_key" type="text">
+				<title xml:lang="ko">플러그인키</title>
+				<description xml:lang="ko">플러그인키는 미투데이 로그인 후 '환경설정 > 소셜플러그인'에서 발급 받을 수 있습니다.</description>
+			</var>
+		</group>
+	</extra_vars>
+</addon>
