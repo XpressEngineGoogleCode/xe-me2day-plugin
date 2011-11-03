@@ -67,15 +67,15 @@ if ($called_position == 'before_display_content' && Context::getResponseMethod()
 
 		if (!$addon_info->button_align || $addon_info->button_align == 'left')
 		{
-			$buttonHtml = sprintf('<div class="sns_me2day_socialplugin_button" style="text-align: left;">%s</div>', $buttonHtml);
+			$buttonHtml = sprintf('<div class="sns_me2_btn" style="text-align: left;">%s</div>', $buttonHtml);
 		}
 		else if ($addon_info->button_align == 'center')
 		{
-			$buttonHtml = sprintf('<div class="sns_me2day_socialplugin_button" style="text-align: center;">%s</div>', $buttonHtml);
+			$buttonHtml = sprintf('<div class="sns_me2_btn" style="text-align: center;">%s</div>', $buttonHtml);
 		}
 		else
 		{
-			$buttonHtml = sprintf('<div class="ns_me2day_socialplugin_button" style="text-align: right;">%s</div>', $buttonHtml);
+			$buttonHtml = sprintf('<div class="sns_me2_btn" style="text-align: right;">%s</div>', $buttonHtml);
 		}
 
 		// Apply button html
@@ -100,7 +100,7 @@ if ($called_position == 'before_display_content' && Context::getResponseMethod()
 		$commentPingback = $addon_info->comment_pingback;
 		if (!$commentPingback) $commentPingback = 'unchecked';
 
-		$commentHtml = sprintf('<div class="sns_me2day_socialplugin_comment"><me2:comment count="%s" width="%s" color="%s" pingback="%s" href="%s" plugin_key="%s"></me2:comment></div>',
+		$commentHtml = sprintf('<div class="sns_me2_cmt"><me2:comment count="%s" width="%s" color="%s" pingback="%s" href="%s" plugin_key="%s"></me2:comment></div>',
 				$commentCount,
 				$commentWidth,
 				$commentColor,
